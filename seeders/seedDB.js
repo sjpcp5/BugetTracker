@@ -3,7 +3,7 @@ var db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-    "mongodb://user:password@ds015730.mlab.com:15730/heroku_r2bgtg6w",
+    "mongodb://user:password12@ds015730.mlab.com:15730/heroku_r2bgtg6w",
   {
     useNewUrlParser: true,
   }
