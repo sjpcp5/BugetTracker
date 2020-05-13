@@ -3,9 +3,11 @@ var db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-    "mongodb://user:password12@ds015730.mlab.com:15730/heroku_r2bgtg6w",
+    "mongodb://jacki:password12@ds015730.mlab.com:15730/heroku_r2bgtg6w",
   {
     useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
   }
 );
 
@@ -13,17 +15,17 @@ var budgetSeed = [
   {
     name: "Income",
     value: 5000,
-    date: 05 / 02 / 2020,
+    date: new Date().setDate(new Date().getDate() - 10),
   },
   {
     name: "Mortgage",
-    value: 1000,
-    date: 05 / 06 / 2020,
+    value: -1000,
+    date: new Date().setDate(new Date().getDate() - 10),
   },
   {
     name: "Groceries",
-    value: 200,
-    date: 05 / 05 / 2020,
+    value: -200,
+    date: new Date().setDate(new Date().getDate() - 10),
   },
 ];
 
