@@ -1,9 +1,13 @@
 var mongoose = require("mongoose");
 var db = require("../models");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
-  useNewUrlParser: true,
-});
+mongoose.connect(
+  process.env.MONGODB_URI ||
+    "mongodb://user:password@ds015730.mlab.com:15730/heroku_r2bgtg6w",
+  {
+    useNewUrlParser: true,
+  }
+);
 
 var budgetSeed = [
   {

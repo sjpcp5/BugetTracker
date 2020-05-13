@@ -16,10 +16,11 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  "mongodb://user:password>@ds015730.mlab.com:15730/heroku_r2bgtg6w",
+  "mongodb://user:password@ds015730.mlab.com:15730/heroku_r2bgtg6w",
   {
     useNewUrlParser: true,
     useFindAndModify: false,
+    useUnifiedTopology: true,
   }
 );
 
