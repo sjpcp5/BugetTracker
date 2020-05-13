@@ -1,12 +1,11 @@
 const FILES_TO_CACHE = [
   "/",
-  "assets/images//icon/icon-192x192.png",
-  "assets/images//icon/icon-512x512.png",
-  "/favicon.ico",
+  "./assets/images/icons/icon-512x512.png",
+  "./assets/images/icons/icon-192x192.png",
   "/manifest.webmanifest",
-  "/style.css",
-  "assets/js/index.js",
-  "assets/js/db.js",
+  "./assets/style/styles.css",
+  "./assets/js/index.js",
+  "./assets/js/db.js",
   "/index.html",
 ];
 

@@ -1,3 +1,3 @@
 module.exports = {
-  Transaction: require("./transaction"),
+  Transaction: require("./transaction.js"),
 };
