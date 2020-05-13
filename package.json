@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "lite-server": "lite-server",
-    "seed": " node scripts seedDB.js "
+    "seed": " node seeders/seedDB.js "
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
+    "glob": "^7.1.6",
     "lite-server": "^2.5.3",
+    "mlab": "^1.0.30-beta",
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1"
   }
